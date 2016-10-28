@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="1019" height="639"></canvas>
+	</body>
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var p = canvas.getContext('2d');
+		
+		//设置渐变的背景色
+		var grd = p.createLinearGradient(300,-100,1019,639);
+		//context.createLinearGradient(x0,y0,x1,y1);
+		//渐变开始点的 x0 坐标
+		//渐变开始点的 y0 坐标
+		//渐变结束点的 x1 坐标
+		//渐变结束点的 y1 坐标
+		grd.addColorStop(0,"#1400eb");
+		grd.addColorStop(1,"#cc0033");
+		//填充背景色
+		p.fillStyle=grd;
+		//设置色块
+		p.fillRect(0,0,1019,639);
+		
+		//青色背景
+		p.beginPath();
+		p.fillStyle="#01ffff";
+		p.fillRect(228,98,588,477);
+		p.closePath();
+		
+		//头部，半圆
+		p.beginPath();
+		p.fillStyle="#fe0000";
+		p.arc(529,248,110,Math.PI,Math.PI*1.95,false);
+		p.fill();
+		p.closePath();
+		
+		//左眼
+		p.beginPath();
+		p.fillStyle="#ffffff";
+		p.arc(477,200,10,0,Math.PI*2,true);
+		p.fill();
+		p.closePath();
+		
+		//右眼
+		p.beginPath();
+		p.fillStyle="#000000";
+		p.arc(560,180,23,Math.PI,Math.PI*1.9,true);
+		p.fill();
+		p.closePath();
+		
+		//眼罩的黑线
+		//上部分
+		p.beginPath();
+		p.strokeStyle="#000";
+		p.lineWidth=2;
+		p.moveTo(485,150);
+		p.lineTo(555,185);
+		p.stroke();
+		p.closePath();
+		
+//		584,194
+		//下部分
+		p.beginPath();
+		p.strokeStyle="#000";
+		p.lineWidth=2;
+		p.moveTo(583,184);
+		p.lineTo(636,220);
+		p.stroke();
+		p.closePath();
+		
+		//左手
+		//上部半圆
+		p.beginPath();
+		p.fillStyle="red";
+		p.arc(382,284,25,0,Math.PI,true);
+		p.fill();
+		p.closePath();
+		
+		//中部矩形
+		p.beginPath();
+		p.fillStyle="red";
+		p.fillRect(357,284,50,110);
+		p.closePath();
+		
+		//下部半圆
+		p.beginPath();
+		p.fillStyle="red";
+		p.arc(382,394,25,0,Math.PI,false);
+		p.fill();
+		p.closePath();
+		
+		//身体
+		//上部矩形
+		p.beginPath();
+		p.fillStyle="red";
+		p.fillRect(415,264,220,166);
+		p.closePath();
+		
+		//右手
+		//上部半圆
+		p.beginPath();
+		p.fillStyle="red";
+		p.arc(668,284,25,0,Math.PI,true);
+		p.fill();
+		p.closePath();
+		
+		//中部矩形
+		p.beginPath();
+		p.fillStyle="red";
+		p.fillRect(643,284,50,110);
+		p.closePath();
+		
+		//下部半圆
+		p.beginPath();
+		p.fillStyle="red";
+		p.arc(668,394,25,0,Math.PI,false);
+		p.fill();
+		p.closePath();
+		
+		//裙子
+		//左侧1/4圆
+		p.beginPath();
+		p.fillStyle="red";
+		//移动至圆心位置
+		p.moveTo(434,429);
+		p.arc(434,429,19,Math.PI/2,Math.PI,false);
+		p.fill();
+		p.closePath();
+		
+		//中间矩形
+		p.beginPath();
+		p.fillStyle="red";
+		p.fillRect(434,429,182,19);
+		p.closePath();
+		
+		//右侧1/4圆
+		p.beginPath();
+		p.fillStyle="red";
+		//移动至圆心位置
+		p.moveTo(616,429);
+		p.arc(616,429,19,Math.PI/2,Math.PI,true);
+		p.fill();
+		p.closePath();
+		
+		//左脚
+		//大腿
+		p.beginPath();
+		p.fillStyle="red";
+		p.fillRect(460,448,50,55);
+		p.closePath();
+		//鞋子半圆
+		p.beginPath();
+		p.fillStyle="red";
+		p.arc(485,503,25,0,Math.PI,false);
+		p.fill();
+		p.closePath();
+		
+		//右脚
+		//大腿
+		p.beginPath();
+		p.fillStyle="red";
+		p.fillRect(534,448,50,55);
+		p.closePath();
+		//鞋子半圆
+		p.beginPath();
+		p.fillStyle="red";
+		p.arc(559,503,25,0,Math.PI,false);
+		p.fill();
+		p.closePath();
+		
+		//白色围巾
+		p.beginPath();
+		p.strokeStyle="#fff";
+		p.lineWidth=3;
+		p.moveTo(629,256);
+		p.lineTo(671,243);
+		p.stroke();
+		p.closePath();
+		
+	</script>
+</html>
