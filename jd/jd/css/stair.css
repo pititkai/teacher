@@ -1,0 +1,28 @@
+.stair {
+	width: 30px;
+	height: 100px;
+	position: fixed;
+	left: 0px;
+	top: 50%;
+}
+.stair .list li {
+	width: 30px;
+	height: 30px;
+	color: #666;
+	border-bottom: 1px dashed #ccc;
+	background: #fff;
+}
+.stair .list li * {
+	float: left;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.stair .list li u {
+	display: none;
+	color: #fff;
+}
+.stair .list li.change {
+	background: #c81623;
+}

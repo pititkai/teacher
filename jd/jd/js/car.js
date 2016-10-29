@@ -4,11 +4,9 @@ kai();
 //加载商品
 $.ajax({
 	type:"get",
-//	url:"JSON/goods.json",
-	url:"JSON/goods.txt",
+	url:"JSON/goods.json",
 	async:true,
 	success:function(res){
-		res=JSON.parse(res);
 		//遍历商品的JSON
 		$(res).each(function(index){
 			//创建dl、dt、dd
@@ -134,16 +132,13 @@ function kai(){
 			//全选框，点击时，下面全部的勾选框状态和全选框一致
 			$(".car .allChecked").click(function(){
 				$(".car :checkbox").prop("checked",$(this).prop("checked"));
-				allPrice();
 			});
 			//如果下面的勾选框，只要有一个没勾选，则全选取消
 			//如果下面的勾选框，全部勾选后，全选确认
 			$(".car tbody :checkbox").click(function(){
 				//被勾选的元素，改变背景颜色
-//				$(".car tbody tr").css("background","#fff");
-				$(".car tbody tr").removeClass("change");
-//				$(".car tbody :checked").closest('tr').css("background","#fff4e8");
-				$(".car tbody :checked").closest('tr').addClass("change");
+				$(".car tbody tr").css("background","#fff");
+				$(".car tbody :checked").closest('tr').css("background","#fff4e8");;
 				//设置变量，记录是否，全部被选中
 				var flag=false;
 				$(".car tbody :checkbox").each(function(){
@@ -161,7 +156,7 @@ function kai(){
 					//全选 所有的勾选框
 					$(".car :checkbox").prop("checked",true);
 				}
-				allPrice();
+				
 			});
 			
 			allPrice();
@@ -184,8 +179,7 @@ function allPrice(){
 	//统计总价钱
 	var allPrice=0;
 	//遍历tr的行
-//	$(".car tbody tr").each(function(index){
-	$(".car tbody :checked").closest('tr').each(function(index){
+	$(".car tbody tr").each(function(index){
 		var num=parseInt($(this).find('.num').val());
 		var price=$(this).find(".price").text();
 		allPrice=allPrice+num*price;

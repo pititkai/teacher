@@ -1,0 +1,35 @@
+.footerBox {
+	padding-bottom: 30px;
+}
+.footer {
+	width: 1210px;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer * {
+	color: #666;
+}
+.footer img {
+	display: inline-block;
+}
+.footer .first {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 981px;
+	overflow: hidden;
+}
+.footer .first li {
+	float: left;
+	padding: 0 12px;
+	border-left: 1px solid #666;
+}
+.footer .first li:first-child {
+	border-left: none;
+}
+.footer .second p {
+	margin-bottom: 5px;
+}
+.footer .three img {
+	margin-right: 10px;
+}

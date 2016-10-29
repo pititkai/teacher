@@ -1,0 +1,53 @@
+.recommenBox {
+	clear: both;
+	overflow: hidden;
+}
+.recommen {
+	margin: 0 auto;
+	width: 1210px;
+	overflow: hidden;
+}
+.recommen_left {
+	float: left;
+	width: 210px;
+}
+.recommen_main {
+	float: left;
+	overflow: hidden;
+	width: 1000px;
+	height: 164px;
+	position: relative;
+}
+.recommen_main span {
+	display: none;
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	margin-top: -30px;
+	background: black;
+	opacity: 0.3;
+	z-index: 80;
+}
+.recommen_main span.pre {
+	left: 0;
+}
+.recommen_main span.next {
+	right: 0;
+}
+
+.recommen_main ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5000px;
+	overflow: hidden;
+}
+.recommen_main li {
+	float: left;
+}
+
+

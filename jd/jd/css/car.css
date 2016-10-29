@@ -1,0 +1,247 @@
+/*导航栏*/
+.welcomeBox .welcome {
+	width: 990px;
+}
+.welcome_nav > div {
+	width: 990px;
+}
+.welcome_nav > div > ul {
+	width: 220px;
+}
+.welcome_nav > div > ul:first-child {
+	width: 220px;
+}
+/*logo和搜索部分*/
+.headerBox .header {
+	width: 990px;
+}
+.headerBox .header .search {
+	width: 325px;
+	float: right;
+}
+.header .search #search_box {
+	width: 243px;
+}
+/*购物车主体部分*/
+.carBox {
+	min-height: 200px;	
+	padding-top: 50px;
+}
+.car {
+	width: 990px;
+	margin: 0 auto;
+}
+/*购物车内容,用表格展示*/
+.car table {
+	border-collapse: collapse;
+}
+.car table caption {
+	font-size: 16px;
+	text-align: left;
+	color: #c81623;
+	border-bottom: 2px solid #c81623;
+}
+.car table thead {
+	border: 1px solid #ccc;
+}
+.car table thead th {
+	text-align: left;
+	background: #f3f3f3;
+	width: 144px;
+	height: 32px;
+	line-height: 32px;
+}
+.car table thead th:nth-child(1) {
+	width: 50px;
+}
+.car table thead th:nth-child(2) {
+	width: 320px;
+	padding-left: 30px;
+}
+.car tbody {
+	color: #666;
+	border: 1px solid #ccc;
+}
+.car tbody tr {
+	border-bottom: 1px dashed #ccc;
+}
+.car tbody tr td:nth-child(5) {
+	font-weight: bold;
+	color: #333;
+}
+.car tbody dl {
+	overflow: hidden;
+}
+.car tbody dt,.car tbody dd {
+	float: left;
+}
+.car tbody dd {
+	width: 200px;
+	padding-left: 10px;
+}
+.car tbody td {
+	padding: 10px 0;
+}
+.car tbody td i{
+	cursor: pointer;
+	float: left;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin-left: -1px;
+	text-align: center;
+}
+.car tbody td .num {
+	text-align: center;
+	float: left;
+	width: 42px;
+	height: 18px;
+	border: 1px solid #ccc;
+	margin-left: -1px;
+}
+.car tbody td img {
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+	display: inline-block;
+}
+
+.car tfoot {
+	border: 1px solid #ccc;
+	height: 50px;
+	
+}
+.car tfoot * {
+	color: #666;
+}
+.car tfoot a:hover {
+	color: #c81623;
+	cursor: pointer;
+}
+.car tfoot tr td:last-child a {
+	float: right;
+	width: 96px;
+	height: 52px;
+	background: url(../img/car/submit-btn.png) 0 0 no-repeat;
+}
+.car tfoot tr td:nth-child(3) u {
+	color: #e4393c;
+}
+.car tfoot .allPrice {
+	color: #e4393c;
+}
+/*购物车没有商品时*/
+.car .no_login {
+	display: none;
+	margin: 0 auto;
+	width: 450px;
+}
+.car .no_login dt,.car .no_login dd {
+	float: left;
+}
+.car .no_login dt {
+	width: 71px;
+	height: 55px;
+	background: url(../img/car/no-login-icon.png) no-repeat;
+}
+.car .no_login dd {
+	padding-left: 20px;
+}
+.car .no_login dd p {
+	font-size: 14px;
+	color: #666;
+}
+.car .no_login dd input {
+	background: #e74649;
+	border-radius: 4px;
+	border: none;
+	line-height: 25px;
+	color: #fff;
+	font-size: 12px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.car .no_login dd a {
+	color: #005ea7;
+}
+.car .no_login dd a:hover {
+	color: #c81623;
+}
+
+/*商品推荐*/
+.goodsBox {
+	overflow: hidden;
+}
+.goods {
+	width: 990px;
+	margin: 0 auto;
+}
+.goods h2 {
+	font-size: 16px;
+	color: #c81623;
+}
+.goods dl {
+	float: left;
+	/*width: 228px;*/
+	width: 225px;
+	/*height: 267px;*/
+	padding: 20px 10px;
+	border: 1px dashed #ccc;
+	/*margin-left: -1px;*/
+	margin-right: -1px;
+	/*margin: -1px 0 0 -1px;*/
+}
+.goods dl * {
+	margin: 0 auto;
+	text-align: center;
+	color: #666;
+}
+.goods dl u,.goods dl span {
+	color: #c81623;
+}
+.goods dl p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.goods dl i {
+	float: left;
+	width: 18px;
+	height: 16px;
+	margin-top: 6px;
+	margin-left: 15px;
+	background: url(../img/goods/btn_bg.png) 0 -57px no-repeat;
+}
+.goods dl .btn {
+	display: block;
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: 1px solid #666;
+	border-radius: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.goods dl:hover {
+	border: 1px solid #c81623;
+	z-index: 2;
+}
+.goods dl:hover a {
+	cursor: pointer;
+	background: #e4393c;
+	color: #fff;
+	border: 1px solid #e4393c;
+} 
+.goods dl:hover a i {
+	background-position: -28px -57px;
+}
+
+/*服务区域*/
+.serviceBox .service {
+	width: 990px;
+}
+.serviceBox .service > ul {
+	width: 135px;
+}
+

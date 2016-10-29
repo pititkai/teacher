@@ -1,0 +1,384 @@
+.bannerBox {
+	height: 466px;
+	background: url(../img/banner/banner_bg.png) center top no-repeat;
+	height: ;
+}
+.banner {
+	margin: 0 auto;
+	width: 1210px;
+}
+.banner a:hover {
+	color: #cd303c;
+}
+/*隐藏的div,相对于ul定位*/
+.banner_list {
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 210px;
+}
+.banner_list li {
+	padding-left: 20px;
+	margin-top: -1px;
+	height: 30px;
+	line-height: 30px;
+	background: #c81623;
+	border: 1px solid #c81623;
+}
+.banner_list li > a {
+	font-size: 14px;
+	color: #fff;
+}
+.banner_list li > a > i {
+	float: right;
+	margin-right: 10px;
+	text-align: right;
+}
+.banner_list li > div {
+	display: none;
+	z-index: 90;
+	background: #fff;
+	width: 1000px;
+	position: absolute;
+	padding-top: 30px;
+	top: 0px;
+	left: 210px;
+	border: 1px solid #ccc;
+}
+.banner_list li > div > a {
+	text-align: center;
+	float: left;
+	height: 25px;
+	margin-left: 20px;
+	padding-left: 10px;
+	margin-right: -10px;
+	background: #7C7171;
+	color: #fff!important;
+}
+.banner_list li > div > a:hover {
+	background: #c81623;
+}
+.banner_list li > div > a:hover i {
+	background: #b1191a;
+}
+.banner_list li > div > a > i {
+	float: right;
+	width: 25px;
+	margin-left: 10px;
+	line-height: 25px;
+	background: #5c5251;
+}
+.banner_list dl {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.banner_list dl i {
+	/*display: inline-block;*/
+	margin: 10px 0;
+}
+.banner_list dt,.banner_list dd {
+	float: left;
+}
+.banner_list dt {
+	text-align: right;
+	width: 100px;
+	/*height: auto;*/
+}
+.banner_list dt a {
+	color: #666;
+}
+.banner_list dd {
+	margin-left: 20px;
+	width: 800px;
+	/*border-bottom: 1px solid #e0e0e0;*/
+}
+.banner_list dd a {
+	padding: 0 10px;
+	color: #ccc;
+	border-left: 1px solid #e0e0e0;
+}
+.bg_white {
+	background: #fff;
+}
+
+/*banner轮播图*/
+.banner_center {
+	float: left;
+	position: relative;
+	margin: 10px;
+	width: 730px;
+	height: 454px;
+}
+.banner_center img {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.banner_center a:first-child img {
+	opacity: 1;
+}
+
+.banner_center .num {
+	height: 18px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -83px;
+}
+.banner_center .num li {
+	float: left;
+	background: #3e3e3e;
+	text-align: center;
+	color: #fff;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.banner_center .num li:hover {
+	background: #b61b1f;
+}
+.active {
+	background: #b61b1f!important;
+}
+.banner_center span {
+	display: none;
+	float: left;
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	margin-top: -30px;
+	font-size: 40px;
+	color: #fff;
+	background: #baa990;
+	opacity: 0.5;
+}
+.banner_center span.pre_img {
+	left: 0;
+}
+.banner_center span.next_img {
+	right: 0;
+}
+
+/*banner右侧*/
+.banner_right {
+	float: right;
+	width: 250px;
+	height: 452px;
+	margin-top: 10px;
+}
+.banner_right .top {
+	width: 247px;
+	height: 163px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+.banner_right .top h2 {
+	padding: 0 10px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 16px;
+	font-weight: 100;
+	color: #777;
+	border-bottom: 1px dotted #ccc;
+}
+.banner_right .top h2 a {
+	float: right;
+	font-weight: 100;
+	color: #777;
+	font-size: 14px;
+}
+.banner_right .top h2 a:hover {
+	color: #cd303c;
+}
+.banner_right .top ul {
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.banner_right .top li {
+	line-height: 24px;
+}
+.banner_right .top li a {
+	color: #666;
+}
+.banner_right .top li span {
+	font-weight: bold;
+	font-size: 12px;
+	margin-right: 4px;
+}
+.banner_right .bottom {
+	overflow: hidden;
+	position: relative;
+	width: 248px;
+	height: 208px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+.banner_right .bottom > ul > li {
+	cursor: pointer;
+	float: left;
+	width: 61px;
+	/*height: 69px;*/
+	padding-bottom: 7px;
+	text-align: center;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.banner_right .bottom li > i {
+	display: block;
+	margin: 10px auto;
+	width: 25px;
+	height: 25px;
+	background: url(../img/banner/banner_right_bg.png) no-repeat;
+}
+.banner_right .bottom li:nth-child(2) > i {
+	background-position: 0 -25px;
+}
+.banner_right .bottom li:nth-child(3) > i {
+	background-position: 0 -50px;
+}
+.banner_right .bottom li:nth-child(4) > i {
+	background-position: 0 -75px;
+}
+.banner_right .bottom li:nth-child(5) > i {
+	background-position: 0 -100px;
+}
+.banner_right .bottom li:nth-child(6) > i {
+	background-position: 0 -125px;
+}
+.banner_right .bottom li:nth-child(7) > i {
+	background-position: 0 -150px;
+}
+.banner_right .bottom li:nth-child(8) > i {
+	background-position: 0 -175px;
+}
+.banner_right .bottom li:nth-child(9) > i {
+	background-position: -25px -250px;
+}
+.banner_right .bottom li:nth-child(10) > i {
+	background-position: 0 -200px;
+}
+.banner_right .bottom li:nth-child(11) > i {
+	background-position: -25px -275px
+}
+.banner_right .bottom li:nth-child(12) > i {
+	background-position: -25px -225px;
+}
+.banner_right .bottom > div {
+	width: 239px;
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+	/*height: 185px;*/
+	height: 209px;
+	/*position: relative;*/
+}
+.banner_right .bottom > div u.close {
+	float: right;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+.gray {
+	background: #ccc;
+}
+.banner_right .bottom > div ul {
+	overflow: hidden;
+	clear: both;
+}
+.banner_right .bottom > div ul li {
+	float: left;
+	margin-right: 10px;
+}
+.banner_right .bottom > div ul li a{
+	display: block;
+	line-height: 16px;
+	height: 19px;
+	width: 52px;
+}
+.banner_right .bottom > div ul li a.change{
+	color: #fff;
+	background: url(../img/banner/banner_right1.png) center 0 no-repeat;
+}
+.bot1 .phone {
+	width: 100px;
+}
+.banner_right .bottom .bot1 dl {
+	overflow: hidden;
+	margin: 10px 0;
+}
+.banner_right .bottom .bot1 dt,.banner_right .bottom .bot1 dd {
+	float: left;
+}
+.banner_right .bottom .bot1 dd input,.banner_right .bottom .bot1 dd select {
+	margin-left: 5px;
+}
+.banner_right .bottom .bot1 span {
+	color: #c81623;
+}
+.banner_right .bottom .btn {
+	color: #fff;
+	background: #c81623;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	border: none;
+	border-radius: 2px;
+}
+.banner_right .bottom > div p {
+	clear: both;
+}
+.banner_right .bottom > div p img {
+	margin-top: 10px;
+	margin-right: 10px;
+	display: inline-block;
+}
+/*机票内容*/
+.banner_right .bottom .bot2 .returnTime {
+	display: none;
+}
+.banner_right .bottom .bot2 .radio {
+	margin: 10px 0;
+}
+.banner_right .bottom .bot2 .text {
+	position: relative;
+	width: 100px;
+	float: left;
+}
+.banner_right .bottom .bot2 .text input {
+	width: 60px;
+	height: 19px;
+	padding-left: 25px;
+}
+.banner_right .bottom .bot2 span {
+	display: inline-block;
+	background: #f5f5f5;
+	line-height: 23px;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+.banner_right .bottom .bot2 s {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	background: url(../img/banner/change-city.jpg) no-repeat;
+}
+.banner_right .bottom .bot2 .btn {
+	margin-top: 10px;
+}
+.banner_right .bottom .bot3 dt img {
+	width: 65px;
+	height: 90px;
+}
+.banner_right .bottom .bot3 dl {
+	float: left;
+	width: 70px;
+	text-align: center;
+}
+
