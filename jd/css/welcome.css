@@ -1,0 +1,224 @@
+html,body,ul,dl,dt,dd,h1,h2,h3,p {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #9b9b9b;
+}
+li,i {
+	list-style: none;
+	font-style: normal;
+}
+a,u,s {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #cd303c;
+}
+img {
+	display: block;
+}
+
+/*京东最上面的灰色导航栏,登录注册,welcome*/
+.welcomeBox {
+	background: #f1f1f1;
+}
+.welcome {
+	width: 1210px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px;	
+}
+/*所有的超链接文字,同一颜色*/
+.welcome a,.welcome span {
+	color: #777;
+}
+/*所有的超链接,鼠标移入同一颜色,同一小手*/
+.welcome span:hover,.welcome a:hover {
+	color: #cd303c;
+	cursor: pointer;
+}
+.welcome b {
+	position: absolute;
+	width: 12px;
+	height: 6px;
+	right: 0;
+	top: 12px;
+	overflow: hidden;
+}
+.welcome u {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	top: -15px;
+	/*如果变成上箭头，top: -8px;*/
+}
+
+/*welcome左侧的内容*/
+.welcome_left {
+	float: left;
+	padding: 0 10px;
+	position: relative;
+}
+.welcome_left:hover {
+	background: #fff;
+}
+.welcome_left:hover u {
+	transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+}
+.welcome_left ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 30px;
+	background: #fff;
+	border: 1px #f1f1f1 solid;
+	border-top: none;
+	padding-left: 20px;
+	width: 310px;
+	z-index: 100;
+}
+.welcome_left li {
+	float: left;
+	width: 60px;
+}
+.welcome_left li a {
+	display: inline-block;
+	padding: 0 10px;
+}
+.welcome_left ul li a:hover {
+	color: #c81623
+	background: #f4f4f4;
+} 
+.bg_red {
+	background: #c81623;
+	color: #fff;
+}
+.bg_gray {
+	color: #c81623;
+	background: #f4f4f4;
+}
+.bg_white {
+	background: #fff;
+}
+/*welcome右侧的内容,主要是ul*/
+.welcome_right {
+	float: right;
+} 
+.welcome_right > ul > li {
+	float: left;
+	padding: 0 11px;
+	position: relative;
+	background: url(../img/welcome/li_bg.png) right center no-repeat;
+}
+/*有下拉符号的li,隐藏直接孩子div*/
+.welcome_right > ul > li > div {
+	border: 1px solid #f1f1f1;
+	position: absolute;
+	background: #fff;
+	top: 30px;
+	display: none;
+	z-index: 100;
+}
+
+/*注册链接的样式*/
+.welcome_right .register_link {
+	color: #cd303c;;
+}
+.welcome_right i {
+	display: inline-block;
+	width: 15px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(../img/welcome/pic01.png) 0 0 no-repeat;
+}
+.welcome_right > ul > li:last-child {
+	background: none;
+}
+.welcome_right .myJd > :last-child {
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+.myJd :last-child {
+	width: 240px;
+}
+.myJd div:last-child {
+	padding-left: 20px;
+	border: 1px #f1f1f1 solid;
+}
+.myJd :last-child li {
+	width: 120px;
+	float: left;
+}
+.myJd :last-child dl dt,.myJd :last-child dl dd {
+	float: left;
+}
+.myJd :last-child dl {
+	width: 100%;
+}
+.myJd :last-child dd {
+	padding-left: 20px;
+	width: 160px;
+}
+.myJd :last-child dd a {
+	font-weight: bold;
+}
+.myJd :last-child dd span {
+	margin-right: 5px;
+}
+.myJd :last-child > dl img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.myJd :last-child > dl a {
+	margin-right: 80px;
+}
+.myJd :last-child ul {
+	overflow: hidden;
+}
+.serviceJd > div {
+	padding-left: 10px;
+	width: 160px;
+}
+.serviceJd > div > ul {
+	overflow: hidden;
+}
+.serviceJd > div h2 {
+	font-size: 14px;
+	color: #666;
+}
+.serviceJd > div li {
+	float: left;
+	width: 80px;
+}
+.welcome_nav > div {
+	display: block;
+	width: 1200px;
+	position: absolute;
+	right: 0;
+}
+.welcome_nav > div ul {
+	overflow: hidden;
+	float: left;
+}
+.welcome_nav > div ul {
+	margin: 20px 0;
+	padding-left: 20px;
+	width: 260px;
+	border-left: 1px solid #ccc;
+}
+.welcome_nav > div ul:first-child {
+	width: 320px;
+	border: none;
+}
+.welcome_nav > div ul h2 {
+	font-size: 16px;
+}
+.welcome_nav > div li {
+	width: 80px;
+	float: left;
+}

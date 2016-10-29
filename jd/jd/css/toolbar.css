@@ -1,0 +1,87 @@
+.toolbar {
+	border-right: 6px solid #7a6e6e;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.toolbar li {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	left: 0;
+	top: 0;
+	margin-bottom: 2px;
+}
+.toolbar li:hover span,.toolbar li:hover i {
+	cursor: pointer;
+	background-color: #c81623;
+}
+.toolbar li i, .toolbar li span{
+	float: left;
+}
+.toolbar li span {
+	width: 0;
+	display: none;
+	background: #7a6e6e;
+	height: 35px;
+	border-radius: 4px 0 0 4px;
+	line-height: 35px;
+	padding-left: 10px;
+	position: absolute;
+	right: 33px;
+	top: 0;
+	color: #fff;
+}
+.toolbar li i {
+	z-index: 2;
+}
+/*工具栏主体*/
+.toolbar_main {
+	position: absolute;
+	right: -6px;
+	top: 50%;
+	margin-top: -110px;
+}
+.toolbar_main li i {
+	width: 35px;
+	height: 35px;
+	border-radius: 4px;
+	z-index: 10;
+	/*margin-bottom: 2px;*/
+	background: #7a6e6e url(../img/toolbar/toolbars.png) 0 0 no-repeat;
+}
+.toolbar_main li:nth-child(1) i {
+	background-position: -88px -175px;
+}
+.toolbar_main li:nth-child(2) i {
+    background-position: -50px 0;
+}
+.toolbar_main li:nth-child(3) i {
+    background-position: -50px -50px;
+}
+.toolbar_main li:nth-child(4) i {
+    background-position: -50px -100px;
+}
+.toolbar_main li:nth-child(5) i {
+	background-position: -190px -150px;
+}
+.toolbar_main li:nth-child(6) i {
+	background-position: -50px -150px;
+}
+/*工具栏,底部*/
+.toolbar_bottom {
+	position: absolute;
+	right: -6px;
+	bottom: 0;
+}
+.toolbar_bottom li i {
+	width: 35px;
+	height: 35px;
+	border-radius: 4px;
+	margin-bottom: 2px;
+	background: #7a6e6e url(../img/toolbar/toolbars.png) -50px -250px no-repeat;
+}
+.toolbar_bottom li:nth-child(2) i {
+	background-position: -50px -300px;
+}    
+

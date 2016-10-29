@@ -1,0 +1,55 @@
+.serviceBox {
+	
+}
+.serviceBox a:hover {
+	color: #cd303c;
+}
+.service {
+	width: 1210px;
+	margin: 0 auto;
+	padding-top: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.service > ul {
+	float: left;
+	width: 200px;
+}
+.service > ul.lastUl {
+	width: 100px;
+}
+.service > ul h3 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: #777;
+	margin-bottom: 10px;
+}
+.service > ul > li {
+	margin-bottom: 3px;
+}
+.service > ul > li > a {
+	font-size: 12px;
+	color: #666;
+}
+.service > dl {
+	float: left;
+	width: 310px;
+	height: 168px;
+	background: url(../img/service/footer_bg.png) 0 -131px no-repeat;
+}
+.service > dl > dt {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: #777;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.service > dl > dd > p {
+	margin: 0 auto;
+	width: 200px;
+}
+.service > dl > dd a {
+	float: right;
+}

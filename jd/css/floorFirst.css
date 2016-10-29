@@ -1,0 +1,212 @@
+.floorFirstBox {
+	overflow: hidden;
+	clear: both;
+}
+.floorFirstBox a:hover,.floorFirstBox span:hover {
+	color: #c81623;
+	cursor: pointer;
+}
+/*第一楼层,服装*/
+.floorFirst {
+	margin: 0 auto;
+	width: 1210px;
+	overflow: hidden;
+}
+/*第一楼层标题部分*/
+.floorFirst_title {
+	height: 37px;
+	border-bottom: 1px solid #c81623;
+}
+.floorFirst_title i {
+	float: left;
+	background: url(../img/floorFirst/floor1.png) 0 0 no-repeat;
+	width: 31px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+}
+.floorFirst_title h2 {
+	float: left;
+	margin-left: 10px;
+	color: #333;
+	font-size: 20px;
+	font-weight: 100;
+}
+.floorFirst_title ul {
+	float: right;
+}
+.floorFirst_title li {
+	position: relative;
+	top: 2px;
+	background: #fff;
+	float: left;
+	height: 33px;
+	padding: 0 16px;
+	line-height: 36px;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+}
+.floorFirst_title li.change {
+	line-height: 30px;
+	color: #c81623;
+	border-top: solid 3px #c81623;
+	border-left: solid 1px #c81623;
+	border-right: solid 1px #c81623;
+}
+/*第一楼层的左侧*/
+.floorFirst_left {
+	position: relative;
+	float: left;
+	border-left: 1px solid #ccc;
+	height: 634px;
+}
+.floorFirst_left_list {
+	background: rgba(255,255,255,0.5);
+	padding-top: 10px;
+	padding-left: 30px;
+	width: 300px;
+	position: absolute;
+	bottom: 282px;
+	overflow: hidden;
+}
+.floorFirst_left_list li {
+	float: left;
+	width: 100px;
+	margin-bottom: 10px;
+}
+.floorFirst_left_list li span {
+	line-height: 26px;	
+}
+.floorFirst_left_list li i {
+	float: left;
+	width: 26px;
+	height: 26px;
+	background: url(../img/floorFirst/floor1_left_pic.png) no-repeat;
+}
+/*第一楼层左侧,下部分*/
+.floorFirst_left_bottom {
+	clear: both;
+	float: left;
+	width: 330px;
+	background: #eaebf5;
+	/*overflow: hidden;*/
+	position: absolute;
+	bottom: 158px;
+}
+.floorFirst_left_bottom > ul {
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 130px;
+}
+.floorFirst_left_bottom > ul > li {
+	float: left;
+	width: 60px;
+	margin-bottom: 10px;
+}
+.floorFirst_left_bottom li a {
+	color: #777;
+}
+.floorFirst_left_img {
+	position: absolute;
+	/*border-top: 1px solid #ccc;*/
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	bottom: 1px;
+}
+/*第一楼层中间*/
+.floorFirst_center {
+	float: left;
+	width: 439px;
+	position: relative;
+	margin-left: -1px;
+}
+.floorFirst_center img {
+	border-bottom: 1px solid #ccc;
+}
+.floorFirst_center_banner {
+	height: 317px;
+	position: relative;
+	overflow: hidden;
+}
+.floorFirst_center_banner ul.list {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2300px;
+	height: 315px;
+}
+.floorFirst_center_banner ul li {
+	float: left;
+}
+.floorFirst_center_banner .num {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -40px;
+}
+.floorFirst_center_banner .num li {
+	width: 10px;
+	height: 10px;
+	background: #3e3e3e;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.active {
+	background: #b61b1f;
+}
+.floorFirst_center_banner span {
+	display: none;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 40px;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	margin-top: -30px;
+}
+.floorFirst_center_banner span.next {
+	right: 0;
+}
+/*第一楼层右侧*/
+.floorFirst_right {
+	float: left;
+	width: 440px;
+}
+.floorFirst_right > div {
+	float: left;
+	width: 219px;
+}
+.floorFirst_right img {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.floorFirst_top {
+	display: none;
+	float: left;
+	width: 878px;
+}
+.floorFirst_top ul {
+	border-left: 1px solid #ccc;
+	overflow: hidden;
+}
+.floorFirst_top li {
+	width: 218px;
+	border: 1px solid #ccc;
+	margin-top: -1px;
+	margin-left: -1px;
+	float: left;
+}
+.floorFirst_top li img {
+	margin: 0 auto;
+}
+.floorFirst_top li p {
+	margin: 10px;
+}
+.floorFirst_top li span {
+	color: #c81623;
+	margin: 10px;
+}

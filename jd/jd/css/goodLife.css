@@ -1,0 +1,72 @@
+.goodLifeBox {
+	margin-bottom: 10px;	
+	overflow: hidden;
+}
+.goodLife {
+	margin: 0 auto;
+	width: 1210px;
+	text-align: center;
+}
+.goodLife h2 {
+	text-align: left;
+	font-size: 18px;
+	color: #333;
+}
+.goodLife > div {
+	float: left;
+	border: 1px solid #ccc;
+}
+.goodLife + div {
+	margin-left: -1px;
+}
+
+.goodLife h3 {
+	margin: 0 10px;
+	border-bottom: 1px dashed #ccc;
+	color: #333;
+	font: 700 15px/40px 'Microsoft Yahei';
+}
+.goodLife dl,.goodLife dt,.goodLife dd {
+	float: left;
+}
+.goodLife dl {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.goodLife dt {
+	position: absolute;
+	left: 20px;
+	top: 40%;
+}
+.goodLife dt p:last-child {
+	color: #c81623;
+}
+/*品质生活的左侧*/
+.goodLife_left {
+	width: 404px;
+	overflow: hidden;
+	background: #f7f7f7;
+}
+.goodLife_left dl:first-child {
+	border-bottom: 1px solid #ccc;
+}
+.goodLife_left dl:last-child {
+	border-left: 1px solid #ccc;
+}
+
+.goodLife_center {
+	width: 230px;
+}
+.goodLife_right {
+	width: 404px;
+	overflow: hidden;
+	background: #f7f7f7;
+}
+.goodLife_brand {
+	width: 163px;
+	height: 405px;
+}
+.goodLife_brand img {
+	width: 100%;
+}

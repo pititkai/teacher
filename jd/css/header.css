@@ -1,0 +1,162 @@
+.headerBox {
+	height: 100px;
+}
+/*头部,header*/
+.header {
+	margin: 0 auto;
+	width: 1210px;
+	/*overflow: hidden;*/
+}
+.header span:hover,.header a:hover {
+	color: #cd303c;
+	cursor: pointer;
+}
+/*logo,头部header左侧*/
+.logo {
+	padding: 16px 0;
+	float: left;
+	width: 360px;
+}
+/*头部header中部,搜索框*/
+.search {
+	float: left;
+	overflow: hidden;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	width: 530px;
+}
+.search input {
+	float: left;
+	height: 30px;
+}
+#search_box {
+	width: 435px;
+	border: 2px solid #b61d1d;
+}
+#search_btn {
+	background: #b61d1d;
+	color: #fff;
+	width: 76px;
+	height: 36px;
+	border: 2px solid #b61d1d;
+}
+.search ul {
+	width: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+}
+.search li {
+	float: left;
+	margin-right: 10px;
+}
+.search li a {
+	color: #9b9b9b;
+}
+.search li:first-child a {
+	color: #c81623;
+}
+/*购物车,头部header右侧*/
+.shoppingCar {
+	float: left;
+	width: 300px;
+	height: 100px;
+}
+.shoppingCar > div {
+	text-align: center;
+	margin: 25px auto;
+	width: 140px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #dfdfdf;
+	background: #f4f4f4;
+	position: relative;
+	/*z-index: 100;*/
+}
+.shoppingCar i {
+	position: absolute;
+}
+.shoppingCar div i.shoppingCar_left {
+	left: 18px;
+	top: 9px;
+	width: 18px;
+	height: 18px;
+	background: url(../img/welcome/pic01.png) 0 -58px no-repeat;
+}
+.shoppingCar div i.shoppingCar_count {
+	left: 104px;
+	top: -3px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	border-radius: 7px 7px 7px 0;
+	background: #c81623;
+	color: #fff;
+}
+.shoppingCar div i.shoppingCar_right {
+	right: 10px;
+}
+
+.shoppingCar div div {
+	display: none;
+	width: 300px;
+	/*height: 65px;*/
+	overflow: hidden;
+	border: 1px solid #dfdfdf;
+	background: #fff;
+	position: absolute;
+	right: -1px;
+	top: 33px;
+	z-index: 10;
+	
+}
+.shoppingCar div div i {
+	float: left;
+	width: 57px;
+	height: 49px;
+	background: url(../img/header/shoppingCar.png) no-repeat;
+}
+.shoppingCar div div span {
+	line-height: 65px;
+	padding-left: 60px;
+	
+}
+/*刷新购物车的内容*/
+.header .shoppingCar .carList > ul {
+	overflow: hidden;
+	display: none;
+}
+.header .shoppingCar .carList > ul > li {
+	overflow: hidden;
+	padding: 10px;
+	border-bottom: 1px dashed #ccc;
+	position: relative;
+}
+.header .shoppingCar .carList > ul > li * {
+	float: left;
+}
+.header .shoppingCar .carList > ul > li img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ccc;
+}
+.header .shoppingCar .carList > ul > li p {
+	font-size: 12px;
+	line-height: 20px;
+	width: 170px;
+	
+	overflow: hidden;
+}
+/*.header .shoppingCar .carList > ul > li span,.shoppingCar > ul > li u {
+	
+}*/
+.header .shoppingCar .carList > ul > li span.price {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: #c81623;
+}
+.header .shoppingCar .carList > ul > li u.num {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}

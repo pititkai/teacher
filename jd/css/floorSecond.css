@@ -1,0 +1,218 @@
+.floorSecondBox {
+	overflow: hidden;
+}
+.floorSecondBox a:hover,.floorSecondBox span:hover {
+	color: #c81623;
+	cursor: pointer;
+}
+.floorSecond {
+	width: 1210px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+
+/*第二楼层标题部分*/
+.floorSecond_title {
+	height: 37px;
+	border-bottom: 1px solid #c81623;
+}
+.floorSecond_title i {
+	float: left;
+	background: url(../img/floorFirst/floor1.png) 0 0 no-repeat;
+	width: 31px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+}
+.floorSecond_title h2 {
+	float: left;
+	margin-left: 10px;
+	color: #333;
+	font-size: 20px;
+	font-weight: 100;
+}
+.floorSecond_title ul {
+	float: right;
+}
+.floorSecond_title li {
+	position: relative;
+	top: 2px;
+	background: #fff;
+	float: left;
+	height: 33px;
+	padding: 0 16px;
+	line-height: 36px;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+}
+.floorSecond_title li.change {
+	line-height: 30px;
+	color: #c81623;
+	border-top: solid 3px #c81623;
+	border-left: solid 1px #c81623;
+	border-right: solid 1px #c81623;
+}
+/*第二楼层,左侧*/
+.floorSecond_left {
+	float: left;
+	width: 210px;
+	height: 475px;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+/*第二楼层,左侧；第一个ul,有图标*/
+.floorSecond_left .list1 {
+	overflow: hidden;
+	padding-left: 10px;
+	background: #fff;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 146px;
+}
+.floorSecond_left .list1 li {
+	float: left;
+	width: 98px;
+	height: 26px;
+	line-height: 26px;
+	padding: 10px 0;
+}
+.floorSecond_left .list1 li i {
+	margin-right: 5px;
+	float: left;
+	width: 26px;
+	height: 26px;
+	background: url(../img/floorSecond/floorSecond_bg.png) 0 0 no-repeat;
+}
+/*第二楼层,左侧；第二个ul*/
+.floorSecond_left .list2 {
+	width: 100%;
+	padding-top: 10px;
+	height: 59px;
+	opacity: 0.5;
+	background: #eff9fe;
+	position: absolute;
+	bottom: 77px;
+}
+.floorSecond_left .list2 a {
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 5px;
+}
+.floorSecond_left .list2 a:hover {
+	color: #c81623;
+}
+/*第二楼层,左侧；第三个ul*/
+.floorSecond_left .list3 {
+	padding: 10px 25px 25px;
+	background: #eff9fe;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0;
+}
+.floorSecond_left .list3 a {
+	display: inline-block;
+	margin-right: 8px;
+	margin-bottom: 5px;
+}
+/*楼层中间的轮播图*/
+.floorSecond_banner {
+	width: 339px;
+	height: 475px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.floorSecond_banner ul {
+	overflow: hidden;
+	width: 2000px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.floorSecond_banner ul li {
+	float: left;
+}
+.floorSecond_banner ul li a:first-child img {
+	border-bottom: 1px dashed #ccc;
+}
+.floorSecond_banner ul.num {
+	overflow: hidden;
+	width: 80px;
+	height: 10px;
+	position: absolute;
+	/*bottom: 10px;*/
+	top: 455px;
+	left: 50%;
+	margin-left: -40px;
+}
+.floorSecond_banner .num li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	
+	background: black;
+}
+.floorSecond_banner span {
+	display: none;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 30px;
+	margin-top: -30px;
+	top: 50%;
+}
+.floorSecond_banner span:hover {
+	color: #fff;
+}
+.floorSecond_banner span.next {
+	right: 0;
+}
+/*第二楼层右侧*/
+.floorSecond_right {
+	width: 660px;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+.floorSecond_right li {
+	float: left;
+}
+/*第二楼层主体部分*/
+.floorSecond_main {
+	display: none;
+	float: left;
+	width: 1000px;
+	height: 475px;
+	background: #fff;
+}
+.floorSecond_main ul {
+	overflow: hidden;
+}
+.floorSecond_main li {
+	float: left;
+	width: 169px;
+	height: 227px;
+	padding: 10px 15px 0;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.floorSecond_main li img {
+	margin: 0 auto;
+}
+.floorSecond_main li p {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.floorSecond_main li span {
+	color: #c81623;
+	font-size: 16px;
+}
